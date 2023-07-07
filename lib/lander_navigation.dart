@@ -6,7 +6,7 @@ class LanderNavigation {
   LanderLocation move(LanderLocation location, LanderInstruction instruction) {
     return switch (instruction) {
       LanderInstruction.left => _moveLeft(location),
-      LanderInstruction.rigth => _moveRight(location),
+      LanderInstruction.right => _moveRight(location),
       LanderInstruction.forward => _moveForward(location),
     };
   }

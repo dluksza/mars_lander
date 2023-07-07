@@ -48,7 +48,7 @@ void main() {
   });
 
   group('move right', () {
-    final testRightMove = testSideMove(LanderInstruction.rigth);
+    final testRightMove = testSideMove(LanderInstruction.right);
 
     testRightMove(
       actualDirection: CardinalDirection.north,

@@ -119,7 +119,7 @@ void main() {
         parseLanderInstructions("LRF"),
         [
           LanderInstruction.left,
-          LanderInstruction.rigth,
+          LanderInstruction.right,
           LanderInstruction.forward
         ],
       );

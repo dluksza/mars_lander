@@ -1,6 +1,6 @@
 enum LanderInstruction {
   left("L"),
-  rigth("R"),
+  right("R"),
   forward("F");
 
   final String symbol;

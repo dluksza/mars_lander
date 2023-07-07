@@ -16,11 +16,11 @@ void main() {
         startingPoint,
         [
           LanderInstruction.forward,
-          LanderInstruction.rigth,
+          LanderInstruction.right,
           LanderInstruction.forward,
-          LanderInstruction.rigth,
+          LanderInstruction.right,
           LanderInstruction.forward,
-          LanderInstruction.rigth,
+          LanderInstruction.right,
           LanderInstruction.forward,
         ],
       );
@@ -60,7 +60,7 @@ void main() {
       final actual = surface.traverse(startingPoint, [
         LanderInstruction.forward,
         LanderInstruction.forward,
-        LanderInstruction.rigth,
+        LanderInstruction.right,
       ]);
 
       expect(actual.success, isTrue);
@@ -76,13 +76,13 @@ void main() {
     const firstLanderLocation =
         LanderLocation(x: 1, y: 1, orientation: CardinalDirection.east);
     final firstLanderInstructions = [
-      LanderInstruction.rigth,
+      LanderInstruction.right,
       LanderInstruction.forward,
-      LanderInstruction.rigth,
+      LanderInstruction.right,
       LanderInstruction.forward,
-      LanderInstruction.rigth,
+      LanderInstruction.right,
       LanderInstruction.forward,
-      LanderInstruction.rigth,
+      LanderInstruction.right,
       LanderInstruction.forward,
     ];
     const secondLanderLocation =
@@ -90,15 +90,15 @@ void main() {
     // FRRFLLFFRRFLL
     final secondLanderInstrucions = [
       LanderInstruction.forward,
-      LanderInstruction.rigth,
-      LanderInstruction.rigth,
+      LanderInstruction.right,
+      LanderInstruction.right,
       LanderInstruction.forward,
       LanderInstruction.left,
       LanderInstruction.left,
       LanderInstruction.forward,
       LanderInstruction.forward,
-      LanderInstruction.rigth,
-      LanderInstruction.rigth,
+      LanderInstruction.right,
+      LanderInstruction.right,
       LanderInstruction.forward,
       LanderInstruction.left,
       LanderInstruction.left,
