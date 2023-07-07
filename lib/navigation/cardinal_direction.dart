@@ -7,4 +7,10 @@ enum CardinalDirection {
   final String symbol;
 
   const CardinalDirection(this.symbol);
+
+  static Map<String, CardinalDirection> symbolMap = Map.unmodifiable(
+    Map.fromEntries(
+      values.map((direction) => MapEntry(direction.symbol, direction)),
+    ),
+  );
 }
